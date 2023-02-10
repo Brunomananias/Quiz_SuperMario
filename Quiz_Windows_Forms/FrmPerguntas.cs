@@ -13,7 +13,8 @@ namespace Quiz_Windows_Forms
 {
     public partial class FrmPerguntas : Form
     {
-        private Stopwatch stopwatch;  
+        private Stopwatch stopwatch;
+        int i;
         public FrmPerguntas()
         {
             InitializeComponent();
@@ -38,19 +39,27 @@ namespace Quiz_Windows_Forms
         }
 
         private void btnProximo_Click(object sender, EventArgs e)
-        {
-            if (res1.Checked = true)
-            {
-                res1.BackColor = Color.Red;
-            }
+        {           
+            i += 1;
 
-            SegundaPergunta();
+                switch (i)
+                {
+                case 1:
+                    SegundaPergunta();
+                    break;
+                case 2:
+                    TerceiraPergunta();
+                    break;
+                case 3:
+                    QuartaPergunta();
+                    break;
+
+                }                                
         }
 
         private void res1_CheckedChanged(object sender, EventArgs e)
         {
             btnProximo.Enabled = true;
-
         }
 
         private void res2_CheckedChanged(object sender, EventArgs e)
@@ -76,6 +85,28 @@ namespace Quiz_Windows_Forms
             res2.Text = "Amarelo";
             res3.Text = "Verde";
             res4.Text = "Rosa";
+
+        }
+
+        private void TerceiraPergunta()
+        {
+            lblPerguntas.Text = "3) Qual é cor do P do primeiro\r\n" +
+                "mundo?";
+            res1.Text = "Amarelo";
+            res2.Text = "Azul";
+            res3.Text = "Verde";
+            res4.Text = "Rosa";
+
+        }
+
+        private void QuartaPergunta()
+        {
+            lblPerguntas.Text = "4) Qual é o nome das tartarugas\r\n" +
+                "terrestres que são inimigos do Mario?";
+            res1.Text = "Koopa Paratroopa";
+            res2.Text = "Flying Koopa";
+            res3.Text = "Koopa Troopa";
+            res4.Text = "Walking Koopa";
 
         }
     }

@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblPerguntas = new System.Windows.Forms.Label();
-            this.res1 = new System.Windows.Forms.RadioButton();
-            this.res2 = new System.Windows.Forms.RadioButton();
-            this.res3 = new System.Windows.Forms.RadioButton();
-            this.res4 = new System.Windows.Forms.RadioButton();
-            this.btnProximo = new System.Windows.Forms.Button();
             this.tempo = new System.Windows.Forms.Label();
+            this.btnProximo = new System.Windows.Forms.Button();
+            this.res4 = new System.Windows.Forms.RadioButton();
+            this.res3 = new System.Windows.Forms.RadioButton();
+            this.res2 = new System.Windows.Forms.RadioButton();
+            this.res1 = new System.Windows.Forms.RadioButton();
+            this.lblPerguntas = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -55,50 +55,24 @@
             this.panel1.Size = new System.Drawing.Size(479, 334);
             this.panel1.TabIndex = 0;
             // 
-            // lblPerguntas
+            // tempo
             // 
-            this.lblPerguntas.AutoSize = true;
-            this.lblPerguntas.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPerguntas.Location = new System.Drawing.Point(3, 15);
-            this.lblPerguntas.Name = "lblPerguntas";
-            this.lblPerguntas.Size = new System.Drawing.Size(421, 76);
-            this.lblPerguntas.TabIndex = 0;
-            this.lblPerguntas.Text = "1) Qual item permite ao mario \r\nreceber uma vida extra, na hora?\r\n";
+            this.tempo.AutoSize = true;
+            this.tempo.Location = new System.Drawing.Point(33, 290);
+            this.tempo.Name = "tempo";
+            this.tempo.Size = new System.Drawing.Size(32, 25);
+            this.tempo.TabIndex = 6;
+            this.tempo.Text = "30";
             // 
-            // res1
+            // btnProximo
             // 
-            this.res1.AutoSize = true;
-            this.res1.Location = new System.Drawing.Point(24, 132);
-            this.res1.Name = "res1";
-            this.res1.Size = new System.Drawing.Size(101, 29);
-            this.res1.TabIndex = 1;
-            this.res1.Text = "Moedas";
-            this.res1.UseVisualStyleBackColor = true;
-            this.res1.CheckedChanged += new System.EventHandler(this.res1_CheckedChanged);
-            // 
-            // res2
-            // 
-            this.res2.AutoSize = true;
-            this.res2.Location = new System.Drawing.Point(24, 167);
-            this.res2.Name = "res2";
-            this.res2.Size = new System.Drawing.Size(159, 29);
-            this.res2.TabIndex = 2;
-            this.res2.TabStop = true;
-            this.res2.Text = "Cogumelo Azul";
-            this.res2.UseVisualStyleBackColor = true;
-            this.res2.CheckedChanged += new System.EventHandler(this.res2_CheckedChanged);
-            // 
-            // res3
-            // 
-            this.res3.AutoSize = true;
-            this.res3.Location = new System.Drawing.Point(24, 202);
-            this.res3.Name = "res3";
-            this.res3.Size = new System.Drawing.Size(98, 29);
-            this.res3.TabIndex = 3;
-            this.res3.TabStop = true;
-            this.res3.Text = "O yoshi";
-            this.res3.UseVisualStyleBackColor = true;
-            this.res3.CheckedChanged += new System.EventHandler(this.res3_CheckedChanged);
+            this.btnProximo.Location = new System.Drawing.Point(327, 281);
+            this.btnProximo.Name = "btnProximo";
+            this.btnProximo.Size = new System.Drawing.Size(112, 34);
+            this.btnProximo.TabIndex = 5;
+            this.btnProximo.Text = "Proxímo";
+            this.btnProximo.UseVisualStyleBackColor = true;
+            this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
             // 
             // res4
             // 
@@ -112,24 +86,50 @@
             this.res4.UseVisualStyleBackColor = true;
             this.res4.CheckedChanged += new System.EventHandler(this.res4_CheckedChanged);
             // 
-            // btnProximo
+            // res3
             // 
-            this.btnProximo.Location = new System.Drawing.Point(312, 285);
-            this.btnProximo.Name = "btnProximo";
-            this.btnProximo.Size = new System.Drawing.Size(112, 34);
-            this.btnProximo.TabIndex = 5;
-            this.btnProximo.Text = "Proxímo";
-            this.btnProximo.UseVisualStyleBackColor = true;
-            this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
+            this.res3.AutoSize = true;
+            this.res3.Location = new System.Drawing.Point(24, 202);
+            this.res3.Name = "res3";
+            this.res3.Size = new System.Drawing.Size(98, 29);
+            this.res3.TabIndex = 3;
+            this.res3.TabStop = true;
+            this.res3.Text = "O yoshi";
+            this.res3.UseVisualStyleBackColor = true;
+            this.res3.CheckedChanged += new System.EventHandler(this.res3_CheckedChanged);
             // 
-            // tempo
+            // res2
             // 
-            this.tempo.AutoSize = true;
-            this.tempo.Location = new System.Drawing.Point(33, 290);
-            this.tempo.Name = "tempo";
-            this.tempo.Size = new System.Drawing.Size(32, 25);
-            this.tempo.TabIndex = 6;
-            this.tempo.Text = "30";
+            this.res2.AutoSize = true;
+            this.res2.Location = new System.Drawing.Point(24, 167);
+            this.res2.Name = "res2";
+            this.res2.Size = new System.Drawing.Size(159, 29);
+            this.res2.TabIndex = 2;
+            this.res2.TabStop = true;
+            this.res2.Text = "Cogumelo Azul";
+            this.res2.UseVisualStyleBackColor = true;
+            this.res2.CheckedChanged += new System.EventHandler(this.res2_CheckedChanged);
+            // 
+            // res1
+            // 
+            this.res1.AutoSize = true;
+            this.res1.Location = new System.Drawing.Point(24, 132);
+            this.res1.Name = "res1";
+            this.res1.Size = new System.Drawing.Size(101, 29);
+            this.res1.TabIndex = 1;
+            this.res1.Text = "Moedas";
+            this.res1.UseVisualStyleBackColor = true;
+            this.res1.CheckedChanged += new System.EventHandler(this.res1_CheckedChanged);
+            // 
+            // lblPerguntas
+            // 
+            this.lblPerguntas.AutoSize = true;
+            this.lblPerguntas.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPerguntas.Location = new System.Drawing.Point(3, 15);
+            this.lblPerguntas.Name = "lblPerguntas";
+            this.lblPerguntas.Size = new System.Drawing.Size(421, 76);
+            this.lblPerguntas.TabIndex = 0;
+            this.lblPerguntas.Text = "1) Qual item permite ao mario \r\nreceber uma vida extra, na hora?\r\n";
             // 
             // timer1
             // 

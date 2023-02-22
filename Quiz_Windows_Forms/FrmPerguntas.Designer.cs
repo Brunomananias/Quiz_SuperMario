@@ -81,7 +81,6 @@
             this.res4.Name = "res4";
             this.res4.Size = new System.Drawing.Size(170, 29);
             this.res4.TabIndex = 4;
-            this.res4.TabStop = true;
             this.res4.Text = "Cogumelo Verde";
             this.res4.UseVisualStyleBackColor = true;
             this.res4.CheckedChanged += new System.EventHandler(this.res4_CheckedChanged);
@@ -93,7 +92,6 @@
             this.res3.Name = "res3";
             this.res3.Size = new System.Drawing.Size(98, 29);
             this.res3.TabIndex = 3;
-            this.res3.TabStop = true;
             this.res3.Text = "O yoshi";
             this.res3.UseVisualStyleBackColor = true;
             this.res3.CheckedChanged += new System.EventHandler(this.res3_CheckedChanged);
@@ -105,7 +103,6 @@
             this.res2.Name = "res2";
             this.res2.Size = new System.Drawing.Size(159, 29);
             this.res2.TabIndex = 2;
-            this.res2.TabStop = true;
             this.res2.Text = "Cogumelo Azul";
             this.res2.UseVisualStyleBackColor = true;
             this.res2.CheckedChanged += new System.EventHandler(this.res2_CheckedChanged);
@@ -158,11 +155,11 @@
         private Panel panel1;
         private Label tempo;
         private Button btnProximo;
-        private RadioButton res4;
-        private RadioButton res3;
-        private RadioButton res2;
-        private RadioButton res1;
-        private Label lblPerguntas;
-        private System.Windows.Forms.Timer timer1;
+        public RadioButton res4;
+        public RadioButton res3;
+        public RadioButton res2;
+        public RadioButton res1;
+        public Label lblPerguntas;
+        public System.Windows.Forms.Timer timer1;
     }
 }

@@ -69,6 +69,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Quiz_Windows_Forms.Properties.Resources.supermario_10;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(800, 438);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);

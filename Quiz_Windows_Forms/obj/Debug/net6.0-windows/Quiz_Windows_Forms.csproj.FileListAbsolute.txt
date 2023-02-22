@@ -17,3 +17,4 @@ C:\Users\Bruno\OneDrive\Documentos\Projetos\Quiz_Windows_Forms\Quiz_Windows_Form
 C:\Users\Bruno\OneDrive\Documentos\Projetos\Quiz_Windows_Forms\Quiz_Windows_Forms\obj\Debug\net6.0-windows\Quiz_Windows_Forms.genruntimeconfig.cache
 C:\Users\Bruno\OneDrive\Documentos\Projetos\Quiz_Windows_Forms\Quiz_Windows_Forms\obj\Debug\net6.0-windows\Quiz_Windows_Forms.FrmIniciar.resources
 C:\Users\Bruno\OneDrive\Documentos\Projetos\Quiz_Windows_Forms\Quiz_Windows_Forms\obj\Debug\net6.0-windows\Quiz_Windows_Forms.FrmPerguntas.resources
+C:\Users\Bruno\OneDrive\Documentos\Projetos\Quiz_Windows_Forms\Quiz_Windows_Forms\obj\Debug\net6.0-windows\Quiz_Windows_Forms.FrmResultados.resources

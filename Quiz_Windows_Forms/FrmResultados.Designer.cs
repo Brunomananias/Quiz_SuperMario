@@ -36,9 +36,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(314, 120);
+            this.label1.Location = new System.Drawing.Point(338, 141);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 48);
+            this.label1.Size = new System.Drawing.Size(105, 48);
             this.label1.TabIndex = 0;
             this.label1.Text = "score";
             // 
@@ -46,9 +46,9 @@
             // 
             this.lblResultado.BackColor = System.Drawing.Color.LightGray;
             this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblResultado.Location = new System.Drawing.Point(314, 198);
+            this.lblResultado.Location = new System.Drawing.Point(312, 201);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(186, 48);
+            this.lblResultado.Size = new System.Drawing.Size(149, 48);
             this.lblResultado.TabIndex = 1;
             // 
             // FrmResultados
@@ -59,6 +59,7 @@
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.label1);
             this.Name = "FrmResultados";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Resultado Final";
             this.Load += new System.EventHandler(this.FrmResultados_Load);
             this.ResumeLayout(false);

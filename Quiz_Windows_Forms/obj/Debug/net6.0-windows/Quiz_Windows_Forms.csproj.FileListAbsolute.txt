@@ -18,3 +18,10 @@ C:\Users\Bruno\OneDrive\Documentos\Projetos\Quiz_Windows_Forms\Quiz_Windows_Form
 C:\Users\Bruno\OneDrive\Documentos\Projetos\Quiz_Windows_Forms\Quiz_Windows_Forms\obj\Debug\net6.0-windows\Quiz_Windows_Forms.FrmIniciar.resources
 C:\Users\Bruno\OneDrive\Documentos\Projetos\Quiz_Windows_Forms\Quiz_Windows_Forms\obj\Debug\net6.0-windows\Quiz_Windows_Forms.FrmPerguntas.resources
 C:\Users\Bruno\OneDrive\Documentos\Projetos\Quiz_Windows_Forms\Quiz_Windows_Forms\obj\Debug\net6.0-windows\Quiz_Windows_Forms.FrmResultados.resources
+C:\Users\Bruno\OneDrive\Documentos\Projetos\Quiz_Windows_Forms\Quiz_Windows_Forms\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Bruno\OneDrive\Documentos\Projetos\Quiz_Windows_Forms\Quiz_Windows_Forms\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Bruno\OneDrive\Documentos\Projetos\Quiz_Windows_Forms\Quiz_Windows_Forms\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Bruno\OneDrive\Documentos\Projetos\Quiz_Windows_Forms\Quiz_Windows_Forms\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Bruno\OneDrive\Documentos\Projetos\Quiz_Windows_Forms\Quiz_Windows_Forms\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Bruno\OneDrive\Documentos\Projetos\Quiz_Windows_Forms\Quiz_Windows_Forms\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Bruno\OneDrive\Documentos\Projetos\Quiz_Windows_Forms\Quiz_Windows_Forms\obj\Debug\net6.0-windows\Quiz_Windows_Forms.csproj.CopyComplete

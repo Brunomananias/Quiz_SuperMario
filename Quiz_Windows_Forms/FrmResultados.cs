@@ -1,28 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Quiz_Windows_Forms;
+﻿
+using System.Data.SqlClient;
 
 namespace Quiz_Windows_Forms
 {
     public partial class FrmResultados : Form
     {
-        public FrmResultados()
+        public int ScoreFinal;
+      
+        public FrmResultados(int score)
         {
+            ScoreFinal = score;
             InitializeComponent();
         }
 
         private void FrmResultados_Load(object sender, EventArgs e)
         {
-            FrmPerguntas frmPerguntas = new FrmPerguntas();
-            
-            lblResultado.Text = frmPerguntas.score + "/ 6";
+          
+            lblResultado.Text = "   " + ScoreFinal + "/ 6";
         }
+
+       
     }
 }

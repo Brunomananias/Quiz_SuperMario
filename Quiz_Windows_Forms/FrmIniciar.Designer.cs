@@ -31,6 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -64,6 +66,24 @@
             this.button2.Text = "Sair";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(196, 282);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(202, 36);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Insira seu nome:";
+            // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(404, 287);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(181, 31);
+            this.txtNome.TabIndex = 4;
+            // 
             // FrmIniciar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -71,13 +91,14 @@
             this.BackgroundImage = global::Quiz_Windows_Forms.Properties.Resources.supermario_10;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(800, 438);
+            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "FrmIniciar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Quiz";
-            this.Load += new System.EventHandler(this.FrmIniciar_Load);
+            this.Text = "Quiz";          
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -88,5 +109,7 @@
         private Label label1;
         private Button button1;
         private Button button2;
+        private Label label2;
+        private TextBox txtNome;
     }
 }

@@ -15,11 +15,14 @@ namespace Quiz_Windows_Forms
     public partial class FrmPerguntas : Form
     {
         private Stopwatch stopwatch;
+        ConexaoSQL conexaoSQL = new ConexaoSQL();
         public int i, score;
+        public string nome;
 
         public FrmPerguntas()
         {
             InitializeComponent();
+            
         }
 
         private void FrmPerguntas_Load(object sender, EventArgs e)
@@ -93,9 +96,9 @@ namespace Quiz_Windows_Forms
                         score += 1;
                     }
 
-                   
-                    
-                    FrmResultados frmResultado = new FrmResultados();
+
+                    conexaoSQL.pontuacao = score;
+                    FrmResultados frmResultado = new FrmResultados(score);
                     frmResultado.Closed += (s, args) => this.Close();
                     frmResultado.Show();
                     timer1.Stop();
@@ -161,7 +164,7 @@ namespace Quiz_Windows_Forms
 
         public void QuintaPergunta()
         {
-            lblPerguntas.Text = "4) Qual a ordem de encontro dos\r\n" +
+            lblPerguntas.Text = "5) Qual a ordem de encontro dos\r\n" +
                 "Switch Palaces no jogo?";
             res1.Text = "Amarelo, Verde, Rosa, Azul";
             res2.Text = "Amarelo, Verde, Azul, Rosa";
@@ -172,7 +175,7 @@ namespace Quiz_Windows_Forms
 
         public void SextaPergunta()
         {
-            lblPerguntas.Text = "4) Qual é o nome do vilão do Mario?";
+            lblPerguntas.Text = "6) Qual é o nome do vilão do Mario?";
             res1.Text = "Doctor Neo";
             res2.Text = "Doctor Ivo";
             res3.Text = "Bowser";

@@ -1,4 +1,5 @@
 using System.Data.SqlClient;
+using System.Media;
 
 namespace Quiz_Windows_Forms
 {
@@ -19,6 +20,12 @@ namespace Quiz_Windows_Forms
             frmPerguntas.Closed += (s, args) => this.Close();
             frmPerguntas.Show();
             
+        }
+
+        private void FrmIniciar_Load(object sender, EventArgs e)
+        {
+            SoundPlayer som = new SoundPlayer("C:/Users/Bruno/OneDrive/Documentos/Projetos/Quiz_Windows_Forms/Quiz_Windows_Forms/bin/Debug/net6.0-windows/Title.wav");
+            som.Play();
         }
 
         //private void ConexaoSQL()
@@ -44,6 +51,6 @@ namespace Quiz_Windows_Forms
 
         //}
 
-     
+
     }
 }

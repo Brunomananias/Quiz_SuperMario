@@ -24,7 +24,7 @@ namespace Quiz_Windows_Forms
             {
                 _conexao.Open();
 
-                string sql = "INSERT INTO NomesJogo(Id, Nome, Pontuacao) VALUES (@id, @nome, @pontuacao)";
+                string sql = "INSERT INTO NomesJogo(Id, Nome) VALUES (@id, @nome)";
 
                 using (SqlCommand cmd = new SqlCommand(sql, _conexao))
                 {
@@ -41,26 +41,9 @@ namespace Quiz_Windows_Forms
                 _conexao.Close();
             }
         }
+        
 
-        public void PreencherDataGrid()
-        {
-                                
-                _conexao.Open();
-
-            string sql = "SELECT Nome, Pontuacao FROM NomesJogo";
-            using (SqlDataAdapter da = new SqlDataAdapter())
-            {
-                using(DataTable dt = new DataTable())
-                {
-                    da.Fill(dt);
-                    
-                }
-            }
-            
-            }
-        }
-
-    }
+    
 
 
     }

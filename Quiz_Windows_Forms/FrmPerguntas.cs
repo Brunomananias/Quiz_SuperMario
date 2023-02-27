@@ -27,23 +27,12 @@ namespace Quiz_Windows_Forms
 
         private void FrmPerguntas_Load(object sender, EventArgs e)
         {
-            stopwatch = new Stopwatch();
-            stopwatch.Start();
             FrmIniciar frmIniciar = new FrmIniciar();
             btnProximo.Enabled = false;
             res1.Checked = false;
             res2.Checked = false;
             res3.Checked = false;
             res4.Checked = false;
-
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {        
-            //this.tempo.Text = String.Format("{0:mm\\:ss}", stopwatch.Elapsed);
-           
-
-          
         }
 
         private void btnProximo_Click(object sender, EventArgs e)
@@ -100,12 +89,9 @@ namespace Quiz_Windows_Forms
                     conexaoSQL.pontuacao = score;
                     FrmResultados frmResultado = new FrmResultados(score);
                     frmResultado.Closed += (s, args) => this.Close();
-                    frmResultado.Show();
-                    timer1.Stop();
+                    frmResultado.Show();                   
 
                     break;
-
-
             }           
         }
 

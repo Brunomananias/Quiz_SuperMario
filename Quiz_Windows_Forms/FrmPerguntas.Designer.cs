@@ -28,22 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tempo = new System.Windows.Forms.Label();
             this.btnProximo = new System.Windows.Forms.Button();
             this.res4 = new System.Windows.Forms.RadioButton();
             this.res3 = new System.Windows.Forms.RadioButton();
             this.res2 = new System.Windows.Forms.RadioButton();
             this.res1 = new System.Windows.Forms.RadioButton();
             this.lblPerguntas = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.tempo);
             this.panel1.Controls.Add(this.btnProximo);
             this.panel1.Controls.Add(this.res4);
             this.panel1.Controls.Add(this.res3);
@@ -54,15 +50,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(479, 334);
             this.panel1.TabIndex = 0;
-            // 
-            // tempo
-            // 
-            this.tempo.AutoSize = true;
-            this.tempo.Location = new System.Drawing.Point(33, 290);
-            this.tempo.Name = "tempo";
-            this.tempo.Size = new System.Drawing.Size(32, 25);
-            this.tempo.TabIndex = 6;
-            this.tempo.Text = "30";
             // 
             // btnProximo
             // 
@@ -128,11 +115,6 @@
             this.lblPerguntas.TabIndex = 0;
             this.lblPerguntas.Text = "1) Qual item permite ao mario \r\nreceber uma vida extra, na hora?\r\n";
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // FrmPerguntas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -153,13 +135,11 @@
         #endregion
 
         private Panel panel1;
-        private Label tempo;
         private Button btnProximo;
         public RadioButton res4;
         public RadioButton res3;
         public RadioButton res2;
         public RadioButton res1;
         public Label lblPerguntas;
-        public System.Windows.Forms.Timer timer1;
     }
 }
